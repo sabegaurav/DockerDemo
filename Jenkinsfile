@@ -6,6 +6,10 @@ pipeline {
             steps {
                 echo 'Hello! A new commit has arrived 🚀'
             }
+            steps {
+            echo 'hello from another steps'
+
+}
         }
     }
 }
