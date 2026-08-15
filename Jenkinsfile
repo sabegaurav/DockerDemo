@@ -8,13 +8,15 @@ pipeline {
             }
 
         }
+
+        stage('hello') {
+
+            steps {
+            echo 'hello from hello stage'
+        }
+
+        }
     }
 
-    stages('hello') {
 
-    steps {
-    echo 'hello from hello stage'
-}
-
-}
 }
