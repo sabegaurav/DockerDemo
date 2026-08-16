@@ -1,22 +1,18 @@
 pipeline {
     agent any
 
+    environment {
+        MAVEN_HOME = 'C:\\apache-maven-3.9.16'
+        PATH = "${MAVEN_HOME}\\bin;${env.PATH}"
+    }
+
     stages {
 
         stage('Check Maven') {
             steps {
                 bat '''
-                    echo ===== JAVA =====
-                    java -version
-
-                    echo ===== JAVA HOME =====
-                    echo %JAVA_HOME%
-
                     echo ===== MAVEN HOME =====
                     echo %MAVEN_HOME%
-
-                    echo ===== PATH =====
-                    echo %PATH%
 
                     echo ===== WHERE MAVEN =====
                     where mvn
