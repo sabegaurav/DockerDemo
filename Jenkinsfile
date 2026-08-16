@@ -5,7 +5,7 @@ pipeline {
         MAVEN_HOME = 'C:\\apache-maven-3.9.16'
         PATH = "${MAVEN_HOME}\\bin;${env.PATH}"
 
-        DOCKER_IMAGE_NAME = 'gaurav122002/DockerDemo'
+        DOCKER_IMAGE_NAME = 'gaurav122002/dockerdemo'
         DOCKER_IMAGE_TAG = "${BUILD_NUMBER}"
     }
 
